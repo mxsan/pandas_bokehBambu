@@ -969,7 +969,7 @@ def _base_lineplot(
             if hovertool_string is None:
                 if x_axis_type == "datetime":
                     my_hover.tooltips = [
-                        (xlabelname, "@__x__values_original{%F}"),
+                        (xlabelname, "@__x__values_original{%X}"),
                         (name, "@{%s}%s" % (name, number_format)),
                     ]
                     my_hover.formatters = {"__x__values_original": "datetime"}
